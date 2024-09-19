@@ -1,3 +1,5 @@
+"use client";
+
 import { SiVercel } from "react-icons/si";
 import { FaMediumM, FaGithub } from "react-icons/fa";
 import Link from "next/link";
@@ -49,14 +51,20 @@ export default function Home() {
         </div>
 
         <div>
-          <button className="border-2 border-white text-white px-6 py-2 mt-6 text-lg hover:bg-white hover:text-black transition-colors duration-300 animate-bounce">
+          <button
+            onClick={() =>
+              (window.location.href =
+                " window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=idabagusheryana60@gmail.com&su=Subjek%20Pesan&body=Isi%20pesan'")
+            }
+            className="border-2 border-white text-white px-6 py-2 mt-6 text-lg hover:bg-white hover:text-black transition-colors duration-300 animate-bounce"
+          >
             Contact me
           </button>
         </div>
 
         {/* Social icons */}
         <div className="inline-flex justify-start">
-          <div className="flex justify-center space-x-10 mt-8 animate-fadeIn">
+          <div className="flex justify-center space-x-6 mt-8 animate-fadeIn">
             <Link
               href="https://github.com/iniHery"
               className="text-white hover:text-gray-300 transition-colors duration-300"
