@@ -22,7 +22,7 @@ export default function Home() {
       <div className="z-10">
         {/* Main content */}
         <div className="z-10 text-white text-start">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-2">
             {text.split("").map((char, index) => (
               <span
                 key={index}
@@ -33,17 +33,17 @@ export default function Home() {
               </span>
             ))}
           </h1>
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 mt-2 animate-textReveal overflow-hidden">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-2 mt-2 animate-textReveal overflow-hidden">
             <span className="inline-block">FRONTEND</span>
           </h2>
           <h2
-            className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 animate-textReveal overflow-hidden"
+            className="text-5xl sm:text-6xl md:text-7xl font-bold mb-2 animate-textReveal overflow-hidden"
             style={{ animationDelay: "0.2s" }}
           >
             <span className="inline-block">WEB</span>
           </h2>
           <h2
-            className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 animate-textReveal overflow-hidden"
+            className="text-5xl sm:text-6xl md:text-7xl font-bold mb-2 animate-textReveal overflow-hidden"
             style={{ animationDelay: "0.2s" }}
           >
             <span className="inline-block">D3VELOPER</span>
@@ -54,7 +54,7 @@ export default function Home() {
           <button
             onClick={() =>
               (window.location.href =
-                " window.location.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=idabagusheryana60@gmail.com&su=Subjek%20Pesan&body=Isi%20pesan'")
+                "https://mail.google.com/mail/?view=cm&fs=1&to=idabagusheryana60@gmail.com&su=Subjek%20Pesan&body=Isi%20pesan")
             }
             className="border-2 border-white text-white px-6 py-2 mt-6 text-lg hover:bg-white hover:text-black transition-colors duration-300 animate-bounce"
           >
