@@ -6,11 +6,14 @@ export default function Home() {
   const text = "HERY";
 
   return (
-    <div className="min-h-screen min-w-sm bg-black flex flex-col justify-center items-center p-32 relative overflow-hidden">
+    <div className="min-h-screen min-w-sm bg-black flex flex-col justify-center items-center md:p-32 p-6 relative overflow-hidden">
       {/* Animated background grid */}
-      <div className="absolute inset-0 grid grid-cols-12 pointer-events-none animate-pulse">
-        {[...Array(84)].map((_, i) => (
-          <div key={i} className="border-gray-600 border-[1px]"></div>
+      <div className="absolute inset-0 grid grid-cols-8 md:grid-cols-12 pointer-events-none animate-pulse">
+        {[...Array(300)].map((_, i) => (
+          <div
+            key={i}
+            className="border-gray-600 border-[1px] w-full aspect-square"
+          ></div>
         ))}
       </div>
 
@@ -43,15 +46,17 @@ export default function Home() {
           >
             <span className="inline-block">D3VELOPER</span>
           </h2>
+        </div>
 
-          <button className="border-2 border-white px-6 py-2 mt-6 text-lg hover:bg-white hover:text-black transition-colors duration-300 animate-bounce">
+        <div>
+          <button className="border-2 border-white text-white px-6 py-2 mt-6 text-lg hover:bg-white hover:text-black transition-colors duration-300 animate-bounce">
             Contact me
           </button>
         </div>
 
         {/* Social icons */}
         <div className="inline-flex justify-start">
-          <div className="flex justify-center space-x-6 mt-8 animate-fadeIn">
+          <div className="flex justify-center space-x-10 mt-8 animate-fadeIn">
             <Link
               href="https://github.com/iniHery"
               className="text-white hover:text-gray-300 transition-colors duration-300"
